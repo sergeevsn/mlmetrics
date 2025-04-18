@@ -1,6 +1,7 @@
 # mlmetrics.h
 
 A **header-only C++ library** for computing some of machine learning metrics. 4 for classification, 4 for regression, just to start :)
+Classification metrics are with weighted average hard-coded, gonna make an average parameter like in scikit-learn in future.
 True and predicted vectors must be of some **floating point type** (float, double, etc.)
 
 ![Header-only](https://img.shields.io/badge/header--only-lightgrey) ![C++11](https://img.shields.io/badge/C++-11-blue) ![License](https://img.shields.io/badge/license-MIT-brightgreen)
