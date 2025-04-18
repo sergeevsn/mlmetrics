@@ -30,7 +30,7 @@ True and predicted vectors must be of some **floating point type** (float, doubl
    ```cpp
    #include "mlmetrics.h"
    
-## Run test program. It simpy reads provided csv files with 2 columns and calculates regression or classification metrics
+## Run test program. It simply reads provided csv files with 2 columns and calculates regression or classification metrics
 
 1. Compile: 
 ```bash
