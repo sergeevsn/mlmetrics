@@ -1,6 +1,6 @@
 # mlmetrics.h
 
-A **header-only C++ library** for computing machine learning metrics. Lightweight, easy to integrate, and designed for both classification and regression tasks.
+A **header-only C++ library** for computing some of machine learning metrics. Lightweight, easy to integrate, and designed for both classification and regression tasks.
 True and predicted vectors must be of some **floating point type** (float, double, etc.)
 
 ![Header-only](https://img.shields.io/badge/header--only-lightgrey) ![C++11](https://img.shields.io/badge/C++-11-blue) ![License](https://img.shields.io/badge/license-MIT-brightgreen)
