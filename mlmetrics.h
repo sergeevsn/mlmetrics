@@ -11,6 +11,30 @@
 
 namespace mlmetrics {
 
+
+/// Computes accuracy score.
+template <typename T>
+T get_accuracy_score(const std::vector<T>& y_true,
+                     const std::vector<T>& y_pred) {
+    if (y_true.size() != y_pred.size()) {
+        throw std::invalid_argument("Sizes of y_true and y_pred must match");
+    }
+
+    const size_t n_samples = y_true.size();
+    if (n_samples == 0) {
+        return T(0);
+    }
+
+    size_t correct = 0;
+    for (size_t i = 0; i < n_samples; ++i) {
+        if (y_true[i] == y_pred[i]) {
+            ++correct;
+        }
+    }
+
+    return static_cast<T>(correct) / static_cast<T>(n_samples);
+}
+
 /// Computes weighted precision score for multiclass classification.
 /// zero_division: {0->score=0, 1->score=1, 2->skip class in average}
 template <typename T>

@@ -83,7 +83,7 @@ int main(int argc, char* argv[]) {
         std::cout << "MAPE: " << mape << "%" << std::endl;
     } else if (flag == "-c") {
         
-
+        double accuracy = mlmetrics::get_accuracy_score(y_true, y_pred);
         double precision = mlmetrics::get_precision_score(y_true, y_pred);
         double recall = mlmetrics::get_recall_score(y_true, y_pred);
         double f1 = mlmetrics::get_f1_score(y_true, y_pred);
@@ -91,6 +91,7 @@ int main(int argc, char* argv[]) {
 
         std::cout << "\nClassification mlmetrics:" << std::endl;
         std::cout << std::fixed << std::setprecision(6);
+        std::cout << "Accuracy: " << accuracy << std::endl;
         std::cout << "Precision: " << precision << std::endl;
         std::cout << "Recall: " << recall << std::endl;
         std::cout << "F1-score: " << f1 << std::endl;
